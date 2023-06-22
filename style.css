@@ -1,0 +1,506 @@
+/* ----------------------
+Google fonts link
+------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* ----------------------
+Variables
+------------------------- */
+:root {
+  --primaryColor: #589167;
+  --grayColor: #4c4c4c;
+}
+
+/* ---------------------------
+Default styles - Global styles
+------------------------------ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.7s 0.2s ease-in-out;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--grayColor);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #000;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.btn {
+  border: none;
+  padding: 1.2rem 1.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  cursor: pointer;
+  letter-spacing: 1.2px;
+}
+
+.section-title {
+  text-align: center;
+  color: var(--grayColor);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.section-subtitle {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-style: italic;
+  text-transform: uppercase;
+  color: var(--primaryColor);
+  font-size: 1rem;
+}
+
+/* ---------------
+TOP NAVBAR starts
+------------------ */
+.top-navbar {
+  background-color: var(--primaryColor);
+  padding: 10px 0;
+}
+.top-navbar > .top-navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-navbar > .top-navbar-content > article > a {
+  color: white;
+}
+.top-navbar > .top-navbar-content > article:nth-child(2) > a {
+  margin-right: 1rem;
+}
+.top-navbar > .top-navbar-content > article:nth-child(2) i:hover {
+  transform: translatey(10px);
+}
+/* ------------
+TOP NAVBAR ends
+--------------- */
+
+/* -----------
+NAVBAR starts
+-------------- */
+.nav {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav > hgroup > h1 {
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+}
+.nav > hgroup > h1 > span {
+  color: var(--primaryColor);
+}
+.nav > hgroup > h1 > span:hover {
+  color: rgb(0, 0, 0);
+}
+.nav > ul {
+  display: flex;
+  gap: 1rem;
+}
+.nav > ul > li > a {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.nav > ul > li:hover {
+  transform: translateY(-10px);
+}
+
+/* --------
+NAVBAR ends
+----------- */
+
+/* -----------
+BANNER starts
+-------------- */
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('img/banner.webp');
+  width: 100%;
+  height: 75vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+.banner > hgroup > h3 {
+  font-size: 2.5rem;
+  color: white;
+}
+.banner > hgroup > h4 {
+  font-size: 1.5rem;
+  color: white;
+  max-width: 400px;
+}
+.banner > hgroup > .button-group {
+  margin-top: 1.5rem;
+}
+.banner > hgroup > .button-group > .banner-btn1 {
+  background-color: var(--primaryColor);
+  color: white;
+  margin-right: 1rem;
+}
+.banner > hgroup > .button-group > .banner-btn1:hover {
+  background-color: white;
+  color: var(--primaryColor);
+}
+.banner > hgroup > .button-group > .banner-btn2 {
+  color: var(--primaryColor);
+}
+.banner > hgroup > .button-group > .banner-btn2:hover {
+  background-color: var(--primaryColor);
+  color: white;
+}
+/* --------
+BANNER ends
+----------- */
+
+/* -----------
+ORDERS starts
+-------------- */
+.orders {
+  padding: 4rem 0;
+}
+.orders > .orders-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.orders > .orders-content > article {
+  flex-basis: 30%;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.orders > .orders-content > article > i {
+  color: var(--primaryColor);
+  font-size: 2rem;
+}
+.orders > .orders-content > article > h5 {
+  margin: 1rem 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.orders > .orders-content > article > p {
+  font-size: 0.9rem;
+}
+
+/* --------
+ORDERS ends
+----------- */
+
+/* --------
+ABOUT starts
+----------- */
+.about {
+  padding: 4rem 0;
+}
+.about > .about-content {
+  display: flex;
+  align-items: stretch;
+}
+.about > .about-content > article {
+  flex-basis: 50%;
+  margin-top: 1.5rem;
+}
+.about > .about-content > article > img {
+  width: 100%;
+  vertical-align: middle;
+}
+.about > .about-content > article:last-child {
+  background-color: #f5f4f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+.about > .about-content > article > .section-subtitle {
+  text-align: left;
+}
+.about > .about-content > article > h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+/* --------
+ABOUT ends
+----------- */
+
+/* ---------------------
+SERVICES starts
+------------------------ */
+.services {
+  padding: 4rem 0;
+}
+.services > .services-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.services > .services-content > article {
+  flex-basis: 30%;
+  margin-top: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.services > .services-content > article > .services-img {
+  overflow: hidden;
+}
+.services > .services-content > article > .services-img img {
+  max-width: 100%;
+}
+.services > .services-content > article > .services-img img:hover {
+  transform: scale(1.52);
+}
+.services > .services-content > article > .services-text {
+  padding: 1.5rem 1rem;
+}
+.services > .services-content > article > .services-text > h3 {
+  color: var(--primaryColor);
+  margin-bottom: 1.5rem;
+}
+
+/* ---------------------
+SERVICES ends
+------------------------ */
+
+/* ---------------------
+PRICE section starts
+------------------------ */
+.price {
+  padding: 4rem 0;
+  background-color: #f4f5f0;
+}
+.price > .price-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price > .price-content > article {
+  flex-basis: 30%;
+  margin-top: 2rem;
+  background-color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+.price > .price-content > article > h4 {
+  color: var(--primaryColor);
+  font-size: 2.5rem;
+}
+.price > .price-content > article > h4 + p {
+  margin: 1rem 0;
+  font-weight: 700;
+  color: #000;
+  font-size: 1.5rem;
+}
+.price > .price-content > article > h4 + p + hr + ul {
+  margin: 1rem 0;
+}
+.price > .price-content > article > h4 + p + hr + ul > li:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+.price > .price-content > article > h4 + p + hr + ul > li > i {
+  margin-right: 0.5rem;
+  color: var(--primaryColor);
+  font-size: 1.3rem;
+}
+.price > .price-content > article > button {
+  background-color: var(--primaryColor);
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+}
+.price > .price-content > article > button:hover {
+  background-color: black;
+  color: var(--primaryColor);
+}
+/* ----------------
+PRICE section ends
+------------------- */
+
+/* --------------------
+CONTACT section starts
+----------------------- */
+.contact {
+  padding: 4rem 0;
+}
+.contact > .contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+.contact > .contact-content > article {
+  background-color: var(--primaryColor);
+  flex-basis: 20%;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+}
+.contact > .contact-content > article:nth-last-child(-n + 3) {
+  text-transform: capitalize;
+}
+.contact > .contact-content > article > a {
+  font-size: 1.5rem;
+  color: #fff;
+  padding-bottom: 0.5rem;
+}
+.contact > .contact-content > article > p {
+  color: #fff;
+}
+/* -----------------
+CONTACT section ends
+-------------------- */
+
+/* ------------
+RESPONSE
+--------------- */
+@media (max-width: 1300px) {
+  .about > .about-content {
+    flex-direction: column;
+  }
+  .about > .about-content > article {
+    margin-top: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .services > .services-content > article {
+    flex-basis: 45%;
+  }
+  .contact > .contact-content {
+    flex-wrap: wrap;
+    max-width: 60%;
+    margin: auto;
+  }
+
+  .contact > .contact-content > article {
+    flex-basis: 45%;
+    margin: 2rem 0;
+  }
+}
+@media (max-width: 1130px) {
+  .orders > .orders-content {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  }
+  .orders > .orders-content > article {
+    flex-basis: 45%;
+  }
+}
+@media (max-width: 992px) {
+  .nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav > ul {
+    margin-top: 1.5rem;
+  }
+  .orders > .orders-content > article {
+    flex-basis: 100%;
+  }
+  .price > .price-content {
+    flex-direction: column;
+  }
+  .price > .price-content > article {
+    width: 80%;
+  }
+  .contact > .contact-content {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .contact > .contact-content > article {
+    flex-basis: 45%;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-navbar > .top-navbar-content {
+    flex-direction: column;
+  }
+  .banner > hgroup > h3 {
+    font-size: 1.7rem;
+  }
+  .services > .services-content > article {
+    flex-basis: 80%;
+  }
+  .services > .services-content {
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .top-navbar {
+    display: none;
+  }
+  .nav > ul {
+    gap: 0.5rem;
+  }
+  .nav > ul > li > a {
+    font-size: 0.8rem;
+  }
+  .banner {
+    height: 60vh;
+  }
+  .banner > hgroup > h4 {
+    font-size: 1.25rem;
+    max-width: 330px;
+  }
+  .btn {
+    padding: 1rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  .about > .about-content > article > h3 {
+    font-size: 1.5rem;
+  }
+  .about > .about-content > article:last-child p {
+    font-size: 0.8rem;
+  }
+  .services > .services-content > article {
+    flex-basis: 100%;
+  }
+  .services > .services-content > article > .services-text > p {
+    font-size: 0.9rem;
+  }
+  .contact > .section-title {
+    font-size: 1.8rem;
+  }
+  .contact > .contact-content {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 50%;
+  }
+  .contact > .contact-content > article {
+    flex-basis: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .contact > .contact-content > article > i {
+    font-size: 1rem;
+    padding-bottom: 0.3rem;
+  }
+  .contact > .contact-content > article > a {
+    font-size: 1rem;
+    padding-bottom: 0.3rem;
+  }
+}
