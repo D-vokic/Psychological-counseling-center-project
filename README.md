@@ -1,4 +1,4 @@
-# 3-Psychological-counseling-center-project
+# Psychological-counseling-center-project
 https://D-vokic.github.io/3-Psychological-counseling-center-project/
 
 
