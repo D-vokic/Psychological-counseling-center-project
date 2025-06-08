@@ -1,6 +1,6 @@
 # Psychological-counseling-center-project
-https://D-vokic.github.io/3-Psychological-counseling-center-project/
 
+You can see demo of this project [here](https://d-vokic.github.io/Psychological-counseling-center-project/)
 
 Hi, I am Duško.
 
